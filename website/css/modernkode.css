@@ -27,20 +27,20 @@ h1 {
       font-size: 3.6rem; } }
 
 h2 {
-  font-size: 2.8rem; }
+  font-size: 2.0rem; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.8rem; } }
 
 .btn {
-  background: #8e2c3d;
   color: #ffffff;
   transition: all 0.25s;
   border-radius: 6px;
   font-size: 1.6rem;
   font-weight: 100; }
   .btn:hover {
-    background: #ef2463;
     color: #ffffff; }
   .btn:focus, .btn:active {
-    background: #8e2c3d;
     color: #ffffff;
     outline: none; }
 
@@ -52,21 +52,26 @@ h2 {
 
 body {
   background: #ffffff;
-  color: #333333;
+  color: #3d3d3d;
   font-size: 18px; }
 
 .hero {
   background-size: cover;
   height: 560px;
   background-position: center center;
-  background-color: black;
+  background-color: #000000;
+  background-image: url("../images/banner.jpg");
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff; }
   .hero .text {
-    max-width: 80%; }
+    max-width: 80%;
+    padding-bottom: 160px; }
+  .hero .logo {
+    width: 180px;
+    margin-bottom: 15px; }
   @media (min-width: 768px) {
     .hero {
       height: 780px; } }
@@ -77,7 +82,10 @@ body {
   border-bottom: 1px solid #dddddd; }
 
 .section {
-  padding: 45px 0; }
+  padding: 30px; }
+  @media (min-width: 768px) {
+    .section {
+      padding: 45px 30px; } }
 
 .mobile {
   background: whitesmoke;
@@ -89,6 +97,6 @@ body {
   background: #ffffff;
   text-transform: uppercase; }
   #menu a {
-    color: #282828;
+    color: #000000;
     font-size: 1.5rem;
     padding: 15px 40px; }

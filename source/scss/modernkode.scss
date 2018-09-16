@@ -20,20 +20,27 @@ body {
     background-size: cover;
     height: 560px;
     background-position: center center;
-    background-color: black;
+    background-color: $brand-black;
+    background-image: url("../images/banner.jpg");
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    
+
     .text {
         max-width: 80%;
+        padding-bottom: 160px;
     }
 
-     @media (min-width: $breakpoint2){
-         height: 780px;
-     }
+    .logo {
+        width: 180px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: $breakpoint2){
+        height: 780px;
+    }
 }
 
 .ribbon {
@@ -43,7 +50,11 @@ body {
 }
 
 .section {
-    padding: 45px 0;
+    padding: 30px;
+
+    @media (min-width: $breakpoint2){
+        padding: 45px 30px;
+    }
 }
 
 .mobile {
