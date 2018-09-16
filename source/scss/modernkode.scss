@@ -14,26 +14,42 @@ body {
     background: #ffffff;
     color: $brand-dark;
     font-size: 18px;
+    color: #333333;
 }
 
 .hero {
     background-size: cover;
-    height: 700px;
+    height: 780px;
     background-position: center center;
     background-color: black;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
     
     .text {
         max-width: 80%;
 
     }
+}
 
-    .ribbon {
-        background: #ffffff;
-        height: 80px;
+.ribbon {
+    background: #ffffff;
+    height: 90px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.section {
+    padding: 45px 0;
+}
+
+.mobile {
+    background: whitesmoke;
+    height: 800px;
+
+    .text {
+        text-align: center;
     }
 }
 
