@@ -14,12 +14,11 @@ body {
     background: #ffffff;
     color: $brand-dark;
     font-size: 18px;
-    color: #333333;
 }
 
 .hero {
     background-size: cover;
-    height: 780px;
+    height: 560px;
     background-position: center center;
     background-color: black;
     text-align: center;
@@ -30,8 +29,11 @@ body {
     
     .text {
         max-width: 80%;
-
     }
+
+     @media (min-width: $breakpoint2){
+         height: 780px;
+     }
 }
 
 .ribbon {
@@ -46,14 +48,12 @@ body {
 
 .mobile {
     background: whitesmoke;
-    height: 800px;
+    height: 700px;
 
     .text {
         text-align: center;
     }
 }
-
-
 
 
 // mobile navigation
