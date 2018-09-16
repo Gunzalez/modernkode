@@ -35,14 +35,14 @@ gulp.task('browserSync', function() {
 });
 
 // watch changes to HTML, CSS and JS,
-gulp.task('watch', ['browserSync'], function (){
-    gulp.watch('source/scss/**/*.scss', ['sass']);
-    gulp.watch('website/js/*.js', ['jshint']);
+gulp.task('watch', gulp.parallel('browserSync', function (){
+    gulp.watch('source/scss/**/*.scss', gulp.series('sass'));
+    gulp.watch('website/js/*.js', gulp.series('jshint'));
     gulp.watch('website/*.html', browserSync.reload);
-});
+}));
 
 // define the default task and add the watch task to it
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.parallel('watch'));
 
 
 
