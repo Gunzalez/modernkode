@@ -1,4 +1,6 @@
-# Project Berry Good
+# Modern Kode Ltd
 
-[Link - gunzalez.com/pp/berrygood](http://www.gunzalez.com/pp/berrygood)
+Single page website, nothing more.
+
+HTML, CSS and some JS
 
