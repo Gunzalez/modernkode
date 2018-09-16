@@ -1,0 +1,53 @@
+@import "colours";
+@import "fonts";
+@import "furniture";
+
+.display-none {
+    display: none;
+}
+
+.devices-wide {
+    display: none;
+}
+
+body {
+    background: #ffffff;
+    color: $brand-dark;
+    font-size: 18px;
+}
+
+.hero {
+    background-size: cover;
+    height: 700px;
+    background-position: center center;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .text {
+        max-width: 80%;
+
+    }
+
+    .ribbon {
+        background: #ffffff;
+        height: 80px;
+    }
+}
+
+
+
+
+// mobile navigation
+#menu {
+    background: #ffffff;
+    text-transform: uppercase;
+
+    a {
+        color: $brand-black;
+        font-size: 1.5rem;
+        padding: 15px 40px;
+    }
+}

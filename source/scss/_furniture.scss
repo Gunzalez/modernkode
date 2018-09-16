@@ -1,0 +1,73 @@
+
+* {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0 0 15px 0;
+    line-height: 120%;
+}
+
+body {
+    font-family: $bodyFont;
+}
+
+p, ol, ul {
+    color: #333333;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+strong {
+    font-weight: 400;
+}
+
+h1 {
+    font-family: $headerFont;
+    font-size: 3.6rem;
+    color: $brand-pink;
+
+    @media (min-width: $breakpoint2){
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-family: $headerFont;
+    font-size: 2.8rem;
+
+    @media (min-width: $breakpoint2){
+        font-size: 3.2rem;
+    }
+}
+
+h3 {
+    font-family: $headerFont;
+}
+
+h4 {
+    font-family: $headerFont;
+    font-weight: 400;
+}
+
+.btn {
+    background: $brand-red;
+    color: #ffffff;
+    transition: all 0.25s;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    &:hover {
+        background: $brand-pink;
+        color: #ffffff;
+    }
+
+    &:focus,
+    &:active {
+        background: $brand-red;
+        color: #ffffff;
+        outline: none;
+    }
+}
