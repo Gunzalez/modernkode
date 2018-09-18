@@ -97,7 +97,7 @@ body {
   padding: 30px; }
   @media (min-width: 768px) {
     .section {
-      padding: 45px 30px; } }
+      padding: 75px 0; } }
 
 .mobile {
   background: whitesmoke;
@@ -107,20 +107,47 @@ body {
   .mobile .text {
     margin: 30px 0; }
 
-.showcase {
+.mobile .showcase {
   display: flex;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 20px 0; }
-  .showcase .item {
+  padding: 45px 0; }
+  .mobile .showcase .item {
     text-align: center; }
-    .showcase .item * {
+    .mobile .showcase .item * {
       margin: 0;
       padding: 0; }
-    .showcase .item img {
+    .mobile .showcase .item img {
       width: 60%;
       margin: 0 auto 20px auto;
       outline: 1px solid #dbdbdb; }
+
+.desktop .showcase {
+  display: flex;
+  padding: 0;
+  margin-bottom: 60px; }
+  .desktop .showcase .item {
+    position: relative; }
+    .desktop .showcase .item img {
+      width: 100%; }
+    .desktop .showcase .item h4 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 30px;
+      font-size: 1.2rem;
+      margin: 0;
+      text-align: left;
+      box-sizing: border-box;
+      color: #ffffff; }
+    .desktop .showcase .item a {
+      color: #ffffff;
+      text-decoration: none; }
+  .desktop .showcase.top {
+    margin-top: 60px;
+    margin-bottom: 0; }
 
 #menu {
   background: #ffffff;
