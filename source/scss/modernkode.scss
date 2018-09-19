@@ -1,5 +1,4 @@
 @import "colours";
-@import "fonts";
 @import "furniture";
 
 body {
@@ -48,7 +47,7 @@ body {
     padding: 30px;
 
     @media (min-width: $breakpoint2){
-        padding: 75px 0;
+        padding: 90px 0;
     }
 }
 
@@ -139,7 +138,6 @@ body {
 
         &:nth-last-child(1) {
             margin-top: 0;
-            margin-bottom: 0;
         }
     }
 }
@@ -152,7 +150,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    min-height: 300px;
+    border-top: 1px solid lighten($brand-grey, 15%);
+
+    min-height: 260px;
 }
 
 .footer {

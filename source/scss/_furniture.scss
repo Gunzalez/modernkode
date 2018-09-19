@@ -1,7 +1,6 @@
 @import "colours";
 @import "fonts";
 
-
 * {
     outline: none;
 }
@@ -86,27 +85,5 @@ h4 {
 
     @media (min-width: $breakpoint2){
         font-size: 1.4rem;
-    }
-}
-
-
-.btn {
-    //background: $brand-red;
-    color: #ffffff;
-    transition: all 0.25s;
-    border-radius: 6px;
-    font-size: 1.6rem;
-    font-weight: 100;
-
-    &:hover {
-        //background: $brand-pink;
-        color: #ffffff;
-    }
-
-    &:focus,
-    &:active {
-        //background: $brand-red;
-        color: #ffffff;
-        outline: none;
     }
 }

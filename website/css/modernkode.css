@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400|Mukta+Malar:200,300,400");
-@import url("https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400|Mukta+Malar:200,300,400");
 * {
   outline: none; }
 
@@ -63,18 +62,6 @@ h4 {
     h4 {
       font-size: 1.4rem; } }
 
-.btn {
-  color: #ffffff;
-  transition: all 0.25s;
-  border-radius: 6px;
-  font-size: 1.6rem;
-  font-weight: 100; }
-  .btn:hover {
-    color: #ffffff; }
-  .btn:focus, .btn:active {
-    color: #ffffff;
-    outline: none; }
-
 body {
   background: #ffffff;
   color: #3d3d3d; }
@@ -109,7 +96,7 @@ body {
   padding: 30px; }
   @media (min-width: 768px) {
     .section {
-      padding: 75px 0; } }
+      padding: 90px 0; } }
 
 ._light {
   background: whitesmoke; }
@@ -165,15 +152,15 @@ body {
         color: #FC6621;
         text-decoration: none; }
     ._dark .showcase:nth-last-child(1) {
-      margin-top: 0;
-      margin-bottom: 0; }
+      margin-top: 0; }
 
 ._map {
   background-image: url("../images/bg-maps.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 300px; }
+  border-top: 1px solid #dbdbdb;
+  min-height: 260px; }
 
 .footer {
   background: #3d3d3d;
