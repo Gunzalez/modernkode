@@ -19,10 +19,10 @@
     modernkode.environment = {
 
         resize: function(){
+
         },
 
         init: function (){
-            // check for mobile
 
         }
     };
@@ -53,7 +53,6 @@
     // main resize
     modernkode.resize = function () {
         modernkode.environment.resize();
-        modernkode.navigation.resize();
     };
 
     // main init
