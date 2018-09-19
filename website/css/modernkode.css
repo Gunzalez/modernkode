@@ -121,6 +121,8 @@ body {
       width: 60%;
       margin: 0 auto 20px auto;
       outline: 1px solid #dbdbdb; }
+      .mobile .showcase .item img.no-outline {
+        outline: none; }
 
 .desktop .showcase {
   display: flex;
@@ -129,7 +131,8 @@ body {
   .desktop .showcase .item {
     position: relative; }
     .desktop .showcase .item img {
-      width: 100%; }
+      width: 100%;
+      display: block; }
     .desktop .showcase .item h4 {
       position: absolute;
       bottom: 0;
@@ -143,10 +146,11 @@ body {
       box-sizing: border-box;
       color: #ffffff; }
     .desktop .showcase .item a {
-      color: #ffffff;
+      color: #FDAF2A;
       text-decoration: none; }
   .desktop .showcase.top {
     margin-top: 60px;
+    padding-bottom: 1px;
     margin-bottom: 0; }
 
 #menu {

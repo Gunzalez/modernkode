@@ -87,6 +87,10 @@ body {
                 width: 60%;
                 margin: 0 auto 20px auto;
                 outline: 1px solid lighten($brand-grey, 15%);
+
+                &.no-outline {
+                    outline: none;
+                }
             }
         }
     }
@@ -105,6 +109,7 @@ body {
 
             img {
                 width: 100%;
+                display: block;
             }
 
             h4 {
@@ -122,13 +127,14 @@ body {
             }
 
             a {
-                color: #ffffff;
+                color: $brand-yellow;
                 text-decoration: none;
             }
         }
 
         &.top {
             margin-top: 60px;
+            padding-bottom: 1px;
             margin-bottom: 0;
         }
     }
