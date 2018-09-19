@@ -194,7 +194,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
-    padding-bottom: 10px; }
+    border-top: 1px solid #4a4a4a;
+    padding: 15px 0; }
     .footer .company p {
       text-align: left; }
       .footer .company p:nth-last-child(1) {
