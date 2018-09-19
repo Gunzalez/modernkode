@@ -24,6 +24,21 @@ p, ol, ul {
       p span, ol span, ul span {
         display: block; } }
 
+a {
+  color: #FC6621; }
+
+.footer h4 {
+  font-size: 1.1rem; }
+
+.footer p, .footer ul, .footer ol {
+  font-size: 1.0rem;
+  text-align: left; }
+
+.footer a {
+  text-decoration: none; }
+  .footer a:hover {
+    text-decoration: underline; }
+
 h1 {
   font-size: 2.8rem; }
   @media (min-width: 768px) {
@@ -102,16 +117,17 @@ body {
     margin: 30px 0; }
   ._light .showcase {
     display: flex;
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 45px 0; }
+    padding: 45px 0;
+    justify-content: space-between; }
     ._light .showcase .item {
       text-align: center; }
       ._light .showcase .item * {
         margin: 0;
         padding: 0; }
       ._light .showcase .item img {
-        width: 60%;
+        width: 70%;
         margin: 0 auto 20px auto;
         outline: 1px solid #dbdbdb; }
         ._light .showcase .item img.no-outline {
@@ -119,7 +135,8 @@ body {
 
 ._dark {
   background: #3d3d3d;
-  color: #ffffff; }
+  color: #ffffff;
+  padding-bottom: 0; }
   ._dark .showcase {
     display: flex;
     padding: 0;
@@ -150,3 +167,35 @@ body {
     ._dark .showcase:nth-last-child(1) {
       margin-top: 0;
       margin-bottom: 0; }
+
+.footer {
+  background: #3d3d3d;
+  color: #ffffff;
+  padding: 60px 0 0 0; }
+  .footer * {
+    text-align: left; }
+  .footer h4 {
+    color: #FDAF2A; }
+  .footer .content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    justify-content: flex-end; }
+    .footer .content .item {
+      padding-left: 45px;
+      max-width: 250px; }
+      .footer .content .item:nth-child(1) {
+        margin-right: auto;
+        padding-left: 0;
+        max-width: inherit; }
+  .footer .company {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 10px; }
+    .footer .company p {
+      text-align: left; }
+      .footer .company p:nth-last-child(1) {
+        text-align: right; }
