@@ -168,6 +168,13 @@ body {
       margin-top: 0;
       margin-bottom: 0; }
 
+._map {
+  background-image: url("../images/bg-maps.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px; }
+
 .footer {
   background: #3d3d3d;
   color: #ffffff;

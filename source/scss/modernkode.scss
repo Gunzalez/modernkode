@@ -144,6 +144,17 @@ body {
     }
 }
 
+._map {
+
+    //background: whitesmoke;
+    background-image: url("../images/bg-maps.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 300px;
+}
+
 .footer {
     background: $brand-dark;
     color: #ffffff;
