@@ -37,10 +37,23 @@ body {
     background: #ffffff;
     height: 90px;
     border-bottom: 1px solid lighten($brand-grey, 20%);
+    z-index: 10;
+    width: 100%;
 
     @media (min-width: $breakpoint2){
 
     }
+}
+
+.off-screen {
+    .ribbon {
+        position: fixed;
+        top: 0;
+    }
+}
+
+.off-screen + .section {
+    margin-top: 90px;
 }
 
 .section {

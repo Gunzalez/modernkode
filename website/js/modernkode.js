@@ -3,27 +3,24 @@
 
     let modernkode = {};
 
-    window['modernkode'] = modernkode;
-    console.log(window);
-
     modernkode.properties = {
         windowWidth: '',
         isMobile: false
     };
 
     modernkode.utils = {
-
-
+        //
     };
 
     modernkode.environment = {
 
         resize: function(){
-
+            //
         },
 
         init: function (){
-
+            modernkode['ribbon'] = document.getElementById('ribbon');
+            modernkode['sticky'] = modernkode['ribbon'].offsetTop;
         }
     };
 
@@ -31,7 +28,6 @@
 
         // all init here
         modernkode.environment.init();
-        modernkode.navigation.init();
 
         // // resize triggers
         // $(window).on('resize', function () {
@@ -55,12 +51,26 @@
         modernkode.environment.resize();
     };
 
+    modernkode.scrollEvents = function(){
+
+        var ribbon = modernkode['ribbon'],
+            header = ribbon.parentNode;
+
+        if (window.pageYOffset > modernkode['sticky']) {
+            header.classList.add("off-screen");
+        } else {
+            header.classList.remove("off-screen");
+        }
+    };
+
     // main init
-    // $(document).ready(function () {
-    //     modernkode.init();
-    //     $(window).scroll(function (event) {
-    //         //modernkode.scrollEvents();
-    //     });
-    // });
+    DomReady.ready(function() {
+        modernkode.init();
+        window['onscroll'] = function() {
+            modernkode.scrollEvents();
+        };
+
+    });
+
 
 }(window));

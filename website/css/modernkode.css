@@ -90,7 +90,16 @@ body {
 .ribbon {
   background: #ffffff;
   height: 90px;
-  border-bottom: 1px solid #e8e8e8; }
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 10;
+  width: 100%; }
+
+.off-screen .ribbon {
+  position: fixed;
+  top: 0; }
+
+.off-screen + .section {
+  margin-top: 90px; }
 
 .section {
   padding: 30px 0; }
