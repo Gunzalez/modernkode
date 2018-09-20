@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400|Mukta+Malar:200,300,400");
+@import url("https://fonts.googleapis.com/css?family=Mukta+Malar:200,300,400");
+@font-face {
+  font-family: 'linottesemibold';
+  src: url("fonts/linotte-semibold-webfont.woff2") format("woff2"), url("fonts/linotte-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   outline: none; }
 
@@ -6,20 +12,20 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0 0 15px 0;
   line-height: 100%;
-  font-family: "Mukta Malar", sans-serif;
+  font-family: "linottesemibold";
   text-align: center; }
 
 body {
-  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Mukta Malar", sans-serif;
   font-size: 16px; }
 
 p, ol, ul {
   font-weight: 100;
-  line-height: 120%;
+  line-height: 130%;
   text-align: center; }
   @media (min-width: 768px) {
     p, ol, ul {
-      font-size: 1.4rem; }
+      font-size: 1.2rem; }
       p span, ol span, ul span {
         display: block; } }
 
@@ -30,7 +36,7 @@ a {
   font-size: 1.1rem; }
 
 .footer p, .footer ul, .footer ol {
-  font-size: 1.0rem;
+  font-size: 1.1rem;
   text-align: left; }
 
 .footer a {
@@ -57,14 +63,14 @@ h3 {
       font-size: 2.0rem; } }
 
 h4 {
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
   @media (min-width: 768px) {
     h4 {
       font-size: 1.4rem; } }
 
 body {
   background: #ffffff;
-  color: #3d3d3d; }
+  color: #2d2d2d; }
 
 .hero {
   background-size: cover;
@@ -128,7 +134,7 @@ body {
       text-align: center; }
       ._mobile .showcase .item * {
         margin: 0;
-        padding: 0; }
+        padding: 0 0 3px 0; }
       ._mobile .showcase .item img {
         width: 70%;
         margin: 0 auto 20px auto;
@@ -137,7 +143,7 @@ body {
           outline: none; }
 
 ._desktop {
-  background: #3d3d3d;
+  background: #2d2d2d;
   color: #ffffff; }
   ._desktop .showcase {
     display: flex;
@@ -191,13 +197,14 @@ body {
   min-height: 260px; }
 
 .footer {
-  background: #3d3d3d;
+  background: #2d2d2d;
   color: #ffffff;
   padding: 60px 0 0 0; }
   .footer * {
     text-align: left; }
   .footer h4 {
-    color: #FDAF2A; }
+    color: #FDAF2A;
+    white-space: nowrap; }
   .footer .content {
     display: flex;
     max-width: 1200px;
@@ -205,18 +212,20 @@ body {
     padding-bottom: 30px;
     justify-content: flex-end; }
     .footer .content .item {
-      padding-left: 45px;
-      max-width: 250px; }
+      padding-left: 45px; }
       .footer .content .item:nth-child(1) {
         margin-right: auto;
         padding-left: 0;
-        max-width: inherit; }
+        width: inherit;
+        flex-grow: 4; }
+      .footer .content .item p {
+        max-width: 200px; }
   .footer .company {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
-    border-top: 1px solid #4a4a4a;
+    border-top: 1px solid #3a3a3a;
     padding: 15px 0; }
     .footer .company p {
       text-align: left; }
