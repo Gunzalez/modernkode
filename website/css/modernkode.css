@@ -93,68 +93,68 @@ body {
   border-bottom: 1px solid #e8e8e8; }
 
 .section {
-  padding: 30px; }
+  padding: 30px 0; }
   @media (min-width: 768px) {
     .section {
-      padding: 90px 0; } }
+      padding: 75px 0 60px 0; } }
 
-._light {
+._mobile {
   background: whitesmoke; }
-  ._light .text {
+  ._mobile .text {
     margin: 30px 0; }
-  ._light .showcase {
+  ._mobile .showcase {
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
     padding: 45px 0;
     justify-content: space-between; }
-    ._light .showcase .item {
+    ._mobile .showcase .item {
       text-align: center; }
-      ._light .showcase .item * {
+      ._mobile .showcase .item * {
         margin: 0;
         padding: 0; }
-      ._light .showcase .item img {
+      ._mobile .showcase .item img {
         width: 70%;
         margin: 0 auto 20px auto;
         outline: 1px solid #dbdbdb; }
-        ._light .showcase .item img.no-outline {
+        ._mobile .showcase .item img.no-outline {
           outline: none; }
 
-._dark {
+._desktop {
   background: #3d3d3d;
   color: #ffffff;
   padding-bottom: 0; }
-  ._dark .showcase {
+  ._desktop .showcase {
     display: flex;
     padding: 0;
     margin: 60px 0 0 0; }
-    ._dark .showcase .item {
+    ._desktop .showcase .item {
       position: relative;
       flex-grow: 1; }
-      ._dark .showcase .item img {
+      ._desktop .showcase .item img {
         width: 100%;
         display: block;
         filter: grayscale(1); }
-      ._dark .showcase .item h4 {
+      ._desktop .showcase .item h4 {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.75);
         padding: 20px 30px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 100;
         margin: 0;
         text-align: left;
         box-sizing: border-box;
         color: #ffffff; }
-      ._dark .showcase .item a {
+      ._desktop .showcase .item a {
         color: #FC6621;
         text-decoration: none; }
-    ._dark .showcase:nth-last-child(1) {
+    ._desktop .showcase:nth-last-child(1) {
       margin-top: 0; }
 
-._map {
+._contact {
   background-image: url("../images/bg-maps.jpg");
   background-position: top center;
   background-repeat: no-repeat;
