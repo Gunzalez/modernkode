@@ -43,6 +43,17 @@ body {
     @media (min-width: $breakpoint2){
 
     }
+
+    .menu {
+        max-width: $breakpoint0;
+        margin: 0 auto;
+        padding-top: 20px;
+        display: flex;
+    }
+
+    .logo {
+        width: 90px;
+    }
 }
 
 .off-screen {
@@ -111,12 +122,11 @@ body {
 ._desktop {
     background: $brand-dark;
     color: #ffffff;
-    padding-bottom: 0;
 
     .showcase {
         display: flex;
         padding: 0;
-        margin: 60px 0 0 0;
+        margin: 60px 0;
 
         .item {
             position: relative;
@@ -141,6 +151,7 @@ body {
                 text-align: left;
                 box-sizing: border-box;
                 color: #ffffff;
+                display: none;
             }
 
             a {
@@ -150,7 +161,28 @@ body {
         }
 
         &:nth-last-child(1) {
-            margin-top: 0;
+            //margin-top: 0;
+        }
+    }
+}
+
+._testimonials {
+
+    .showcase {
+        max-width: $breakpoint0;
+        margin: 0 auto;
+        display: flex;
+        padding: 30px 0;
+    }
+
+    .item {
+        max-width: 25%;
+        text-align: left;
+        padding: 0 15px;
+
+        p {
+            text-align: left;
+            padding-bottom: 15px;
         }
     }
 }

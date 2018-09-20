@@ -93,6 +93,13 @@ body {
   border-bottom: 1px solid #e8e8e8;
   z-index: 10;
   width: 100%; }
+  .ribbon .menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex; }
+  .ribbon .logo {
+    width: 90px; }
 
 .off-screen .ribbon {
   position: fixed;
@@ -131,12 +138,11 @@ body {
 
 ._desktop {
   background: #3d3d3d;
-  color: #ffffff;
-  padding-bottom: 0; }
+  color: #ffffff; }
   ._desktop .showcase {
     display: flex;
     padding: 0;
-    margin: 60px 0 0 0; }
+    margin: 60px 0; }
     ._desktop .showcase .item {
       position: relative;
       flex-grow: 1; }
@@ -156,12 +162,25 @@ body {
         margin: 0;
         text-align: left;
         box-sizing: border-box;
-        color: #ffffff; }
+        color: #ffffff;
+        display: none; }
       ._desktop .showcase .item a {
         color: #FC6621;
         text-decoration: none; }
-    ._desktop .showcase:nth-last-child(1) {
-      margin-top: 0; }
+
+._testimonials .showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0; }
+
+._testimonials .item {
+  max-width: 25%;
+  text-align: left;
+  padding: 0 15px; }
+  ._testimonials .item p {
+    text-align: left;
+    padding-bottom: 15px; }
 
 ._contact {
   background-image: url("../images/bg-maps.jpg");
