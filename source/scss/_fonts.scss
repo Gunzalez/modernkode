@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400|Mukta+Malar:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar:200,300,400');
 
-$bodyFont: 'Hind Siliguri', sans-serif;
-$headerFont: 'Mukta Malar', sans-serif;
+@font-face {
+    font-family: 'linottesemibold';
+    src: url('fonts/linotte-semibold-webfont.woff2') format('woff2'),
+    url('fonts/linotte-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$headerFont: 'linottesemibold';
+$bodyFont: 'Mukta Malar', sans-serif;
