@@ -143,9 +143,10 @@ body {
       display: flex;
       max-width: 1400px;
       margin: 0 auto;
-      justify-content: space-around; }
-      ._mobile .showcase .item {
-        text-align: center; } }
+      justify-content: space-around; } }
+  @media (min-width: 992px) {
+    ._mobile .item img {
+      width: 320px; } }
 
 ._desktop {
   background: #2d2d2d;

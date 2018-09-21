@@ -116,13 +116,14 @@ body {
             max-width: $breakpoint0;
             margin: 0 auto;
             justify-content: space-around;
+        }
+    }
 
-            .item {
-                text-align: center;
+    @media (min-width: $breakpoint1){
 
-                img {
-
-                }
+        .item {
+            img {
+                width: 320px;
             }
         }
     }
