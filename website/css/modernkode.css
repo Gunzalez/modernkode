@@ -16,11 +16,14 @@ h1, h2, h3, h4, h5 {
 
 body {
   font-family: "Mukta Malar", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: 100%; }
 
 p, ol, ul {
   font-weight: 100;
-  line-height: 110%;
+  line-height: 120%;
   font-size: 1.2rem; }
   @media (min-width: 768px) {
     p, ol, ul {
@@ -33,7 +36,7 @@ a {
   color: #FC6621; }
 
 .footer h4 {
-  font-size: 1.1rem; }
+  font-size: 1.3rem; }
 
 .footer p, .footer ul, .footer ol {
   font-size: 1.1rem;
@@ -167,6 +170,9 @@ body {
           width: 100%;
           display: block; } }
 
+._technology .showcase {
+  height: 400px; }
+
 ._testimonials .showcase {
   max-width: 1400px;
   margin: 0 auto;
@@ -192,35 +198,39 @@ body {
 .footer {
   background: #2d2d2d;
   color: #ffffff;
-  padding: 60px 0 0 0; }
-  .footer * {
-    text-align: left; }
+  padding: 60px 20px 30px 20px; }
   .footer h4 {
     color: #FDAF2A;
     white-space: nowrap; }
-  .footer .content {
-    display: flex;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    justify-content: flex-end; }
-    .footer .content .item {
-      padding-left: 45px; }
-      .footer .content .item:nth-child(1) {
-        margin-right: auto;
-        padding-left: 0;
-        width: inherit;
-        flex-grow: 4; }
-      .footer .content .item p {
-        max-width: 200px; }
-  .footer .company {
-    display: flex;
-    max-width: 1400px;
-    margin: 0 auto;
-    justify-content: space-between;
-    border-top: 1px solid #3a3a3a;
-    padding: 15px 0; }
-    .footer .company p {
-      text-align: left; }
-      .footer .company p:nth-last-child(1) {
-        text-align: right; }
+  .footer .item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 15px; }
+  .footer .social-links {
+    font-size: 2.0rem; }
+    .footer .social-links li {
+      display: inline; }
+  @media (min-width: 768px) {
+    .footer .content {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+      justify-content: flex-end; }
+      .footer .content .item {
+        padding-left: 45px; }
+        .footer .content .item:nth-child(1) {
+          margin-right: auto;
+          padding-left: 0;
+          width: inherit;
+          flex-grow: 4; }
+        .footer .content .item p {
+          max-width: 200px; }
+    .footer .company {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+      justify-content: space-between; }
+      .footer .company p {
+        text-align: left; }
+        .footer .company p:nth-last-child(1) {
+          text-align: right; } }

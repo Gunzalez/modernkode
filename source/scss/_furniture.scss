@@ -15,11 +15,14 @@ h1, h2, h3, h4, h5 {
 body {
     font-family: $bodyFont;
     font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
 }
 
 p, ol, ul {
     font-weight: 100;
-    line-height: 110%;
+    line-height: 120%;
     font-size: 1.2rem;
 
 
@@ -39,7 +42,7 @@ a {
 
 .footer {
     h4 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     p, ul, ol {
