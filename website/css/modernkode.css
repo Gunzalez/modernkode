@@ -12,8 +12,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0 0 15px 0;
   line-height: 100%;
-  font-family: "linottesemibold";
-  text-align: center; }
+  font-family: "linottesemibold"; }
 
 body {
   font-family: "Mukta Malar", sans-serif;
@@ -21,11 +20,12 @@ body {
 
 p, ol, ul {
   font-weight: 100;
-  line-height: 130%;
-  text-align: center; }
+  line-height: 110%;
+  font-size: 1.2rem; }
   @media (min-width: 768px) {
     p, ol, ul {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      line-height: 130%; }
       p span, ol span, ul span {
         display: block; } }
 
@@ -84,8 +84,7 @@ body {
   justify-content: center;
   color: #ffffff; }
   .hero .text {
-    max-width: 80%;
-    padding-bottom: 160px; }
+    padding-bottom: 130px; }
   .hero .logo {
     width: 180px;
     margin-bottom: 15px; }
@@ -95,24 +94,28 @@ body {
 
 .ribbon {
   background: #ffffff;
-  height: 90px;
+  height: 60px;
   border-bottom: 1px solid #e8e8e8;
   z-index: 10;
   width: 100%; }
   .ribbon .menu {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 6px 20px;
     display: flex; }
   .ribbon .logo {
-    width: 90px; }
+    width: 60px; }
+
+.text {
+  padding: 0 30px 30px 30px;
+  text-align: center; }
 
 .off-screen .ribbon {
   position: fixed;
   top: 0; }
 
 .off-screen + .section {
-  margin-top: 90px; }
+  margin-top: 60px; }
 
 .section {
   padding: 30px 0; }
@@ -121,26 +124,28 @@ body {
       padding: 75px 0 60px 0; } }
 
 ._mobile {
-  background: whitesmoke; }
-  ._mobile .text {
-    margin: 30px 0; }
-  ._mobile .showcase {
-    display: flex;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 45px 0;
-    justify-content: space-between; }
-    ._mobile .showcase .item {
-      text-align: center; }
-      ._mobile .showcase .item * {
-        margin: 0;
-        padding: 0 0 3px 0; }
-      ._mobile .showcase .item img {
-        width: 70%;
-        margin: 0 auto 20px auto;
-        outline: 1px solid #dbdbdb; }
-        ._mobile .showcase .item img.no-outline {
-          outline: none; }
+  background: #cccccc; }
+  ._mobile .item {
+    text-align: center; }
+    ._mobile .item h4 {
+      padding-bottom: 5px;
+      margin-bottom: 0; }
+    ._mobile .item p {
+      padding-bottom: 15px;
+      margin-bottom: 0; }
+    ._mobile .item img {
+      width: 250px;
+      margin: 0 auto;
+      display: block;
+      padding: 0 0 30px 0; }
+  @media (min-width: 768px) {
+    ._mobile .showcase {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+      justify-content: space-around; }
+      ._mobile .showcase .item {
+        text-align: center; } }
 
 ._desktop {
   background: #2d2d2d;
@@ -175,7 +180,7 @@ body {
         text-decoration: none; }
 
 ._testimonials .showcase {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   padding: 30px 0; }
@@ -207,7 +212,7 @@ body {
     white-space: nowrap; }
   .footer .content {
     display: flex;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding-bottom: 30px;
     justify-content: flex-end; }
@@ -222,7 +227,7 @@ body {
         max-width: 200px; }
   .footer .company {
     display: flex;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     justify-content: space-between;
     border-top: 1px solid #3a3a3a;

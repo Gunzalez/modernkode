@@ -19,8 +19,7 @@ body {
     color: #ffffff;
 
     .text {
-        max-width: 80%;
-        padding-bottom: 160px;
+        padding-bottom: 130px;
     }
 
     .logo {
@@ -35,25 +34,30 @@ body {
 
 .ribbon {
     background: #ffffff;
-    height: 90px;
+    height: 60px;
     border-bottom: 1px solid lighten($brand-grey, 20%);
     z-index: 10;
     width: 100%;
 
-    @media (min-width: $breakpoint2){
-
-    }
-
     .menu {
         max-width: $breakpoint0;
         margin: 0 auto;
-        padding-top: 20px;
+        padding: 6px 20px;
         display: flex;
     }
 
     .logo {
-        width: 90px;
+        width: 60px;
     }
+
+    @media (min-width: $breakpoint2){
+
+    }
+}
+
+.text {
+    padding: 0 30px 30px 30px;
+    text-align: center;
 }
 
 .off-screen {
@@ -64,7 +68,7 @@ body {
 }
 
 .off-screen + .section {
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 .section {
@@ -77,45 +81,50 @@ body {
 
 ._mobile {
 
-    background: whitesmoke;
-    //background-image: url("../images/bg-repeat-0.jpg");
-    //background-position: top center;
-    //background-repeat: no-repeat;
-    //background-size: cover;
+    background: #cccccc;
 
-    .text {
-        margin: 30px 0;
-    }
+    .item {
+        text-align: center;
 
-    .showcase {
-        display: flex;
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 45px 0;
-        justify-content: space-between;
+        h4 {
+            padding-bottom: 5px;
+            margin-bottom: 0;
+        }
 
-        .item {
-            text-align: center;
+        p {
+            padding-bottom: 15px;
+            margin-bottom: 0;
+        }
 
-            * {
-                margin: 0;
-                padding: 0 0 3px 0;
-            }
-
-            img {
-                width: 70%;
-                margin: 0 auto 20px auto;
-                outline: 1px solid lighten($brand-grey, 15%);
-
-                &.no-outline {
-                    outline: none;
-                }
-            }
+        img {
+            width: 250px;
+            margin: 0 auto;
+            display: block;
+            padding: 0 0 30px 0;
         }
     }
 
     @media (min-width: $breakpoint2){
 
+        //background-image: url("../images/bg-repeat-0.jpg");
+        //background-position: top center;
+        //background-repeat: no-repeat;
+        //background-size: cover;
+
+        .showcase {
+            display: flex;
+            max-width: $breakpoint0;
+            margin: 0 auto;
+            justify-content: space-around;
+
+            .item {
+                text-align: center;
+
+                img {
+
+                }
+            }
+        }
     }
 }
 
