@@ -16,9 +16,13 @@
             modernkode.desktopTrigger.onclick = function () {
                 modernkode.desktopTrigger.parentNode['classList'].toggle('off');
                 document.querySelector('#controlled').classList.toggle('off');
-            }
+            };
 
             // apps border fun
+            modernkode.interval = setInterval(function () {
+                var apps = document.querySelectorAll('.apps');
+                apps[Math.floor(Math.random()*3)].setAttribute('data-bg', Math.floor(Math.random()*2)+1);
+            }, 2000);
 
         }
     };
