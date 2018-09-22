@@ -65,6 +65,7 @@
             </div>
         </div>
     </div>
+
     <div class="section _desktop">
 
         <div class="text">
@@ -72,7 +73,7 @@
             <p>We think mobile first and so build mobile websites that work well on desktop.</p>
         </div>
 
-        <div class="showcase">
+        <div id="controlled" class="showcase off">
             <div class="item">
                 <img src="images/work-convenire.jpg" alt="Convenire" />
                 <!--<h4><a href="#">Convenire</a></h4>-->
@@ -93,6 +94,13 @@
                 <img src="images/work-pounding.jpg" alt="Pound That Yam" />
                 <!--<h4>Pound That Yam</h4>-->
             </div>
+        </div>
+
+        <div class="controls off" aria-hidden="true">
+            <button id="control">
+                <span>COLOR</span>
+                <span>MONOCHROME</span>
+            </button>
         </div>
 
     </div>
@@ -189,6 +197,7 @@
         </div>
     </div>
     <script src="js/domready.js"></script>
+    <script src="js/polyfills.js"></script>
     <script src="js/modernkode.js"></script>
 </body>
 </html>

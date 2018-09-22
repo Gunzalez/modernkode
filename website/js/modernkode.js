@@ -9,8 +9,17 @@
 
     modernkode.environment = {
         init: function (){
-            modernkode.ribbon = document.getElementById('ribbon');
+
+            // sticky code
+            modernkode.ribbon = document.querySelector('#ribbon');
             modernkode.sticky = modernkode.ribbon.offsetTop;
+
+            // desktop colour/bw fun
+            modernkode.desktopTrigger = document.querySelector('#control');
+            modernkode.desktopTrigger.onclick = function () {
+                modernkode.desktopTrigger.parentNode.classList.toggle('off');
+                document.querySelector('#controlled').classList.toggle('off');
+            }
         }
     };
 

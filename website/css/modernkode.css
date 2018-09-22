@@ -178,7 +178,17 @@ body {
         padding: 0; }
         ._desktop .showcase .item img {
           width: 100%;
-          display: block; } }
+          display: block; }
+      ._desktop .showcase.off img {
+        filter: grayscale(1); } }
+  ._desktop .controls {
+    text-align: center; }
+    ._desktop .controls span:nth-child(1) {
+      display: none; }
+    ._desktop .controls.off span:nth-child(1) {
+      display: block; }
+    ._desktop .controls.off span:nth-last-child(1) {
+      display: none; }
 
 ._technology .showcase {
   height: 400px; }

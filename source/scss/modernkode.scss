@@ -190,9 +190,34 @@ body {
                 img {
                     width: 100%;
                     display: block;
-                    //filter: grayscale(1);
                 }
 
+            }
+
+            &.off {
+
+                img {
+                    filter: grayscale(1);
+                }
+            }
+        }
+    }
+
+    .controls {
+        text-align: center;
+
+        span:nth-child(1){
+            display: none;
+        }
+
+        &.off {
+
+            span:nth-child(1){
+                display: block;
+            }
+
+            span:nth-last-child(1){
+                display: none;
             }
         }
     }
