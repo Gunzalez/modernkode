@@ -81,7 +81,12 @@ body {
 
 ._mobile {
 
-    background: #cccccc;
+    background-color: #e7e7e7;
+    background-image: url("../images/mobile-bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    //background-size: cover;
 
     .item {
         text-align: center;
@@ -98,10 +103,32 @@ body {
 
         img {
             width: 250px;
-            margin: 0 auto;
+            margin: 0 auto 30px auto;
             display: block;
-            padding: 0 0 30px 0;
+            padding: 8px;
+            background: url("../images/mobile-bg-2.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+
+        //&:nth-child(2){
+        //    img {
+        //        background: url("../images/mobile-bg-1.png");
+        //        background-position: center center;
+        //        background-repeat: no-repeat;
+        //        background-size: cover;
+        //    }
+        //}
+        //
+        //&:nth-child(3){
+        //    img {
+        //        background: url("../images/mobile-bg-3.png");
+        //        background-position: center center;
+        //        background-repeat: no-repeat;
+        //        background-size: cover;
+        //    }
+        //}
     }
 
     @media (min-width: $breakpoint2){
@@ -124,7 +151,7 @@ body {
 
         .item {
             img {
-                width: 320px;
+                //width: 320px;
             }
         }
     }
@@ -133,6 +160,10 @@ body {
 ._desktop {
     background: $brand-dark;
     color: #ffffff;
+    background-image: url("../images/desktop-bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     .showcase {
 

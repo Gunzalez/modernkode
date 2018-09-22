@@ -25,12 +25,13 @@ p, ol, ul {
   font-weight: 100;
   line-height: 120%;
   font-size: 1.2rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     p, ol, ul {
       font-size: 1.2rem;
-      line-height: 130%; }
-      p span, ol span, ul span {
-        display: block; } }
+      line-height: 130%; } }
+  @media (min-width: 576px) {
+    p span, ol span, ul span {
+      display: block; } }
 
 a {
   color: #FC6621; }
@@ -49,25 +50,25 @@ a {
 
 h1 {
   font-size: 2.8rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     h1 {
       font-size: 3.6rem; } }
 
 h2 {
   font-size: 2.0rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     h2 {
       font-size: 2.8rem; } }
 
 h3 {
   font-size: 1.6rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     h3 {
       font-size: 2.0rem; } }
 
 h4 {
   font-size: 1.4rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     h4 {
       font-size: 1.4rem; } }
 
@@ -91,7 +92,7 @@ body {
   .hero .logo {
     width: 180px;
     margin-bottom: 15px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .hero {
       height: 780px; } }
 
@@ -122,12 +123,16 @@ body {
 
 .section {
   padding: 30px 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .section {
       padding: 75px 0 60px 0; } }
 
 ._mobile {
-  background: #cccccc; }
+  background-color: #e7e7e7;
+  background-image: url("../images/mobile-bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   ._mobile .item {
     text-align: center; }
     ._mobile .item h4 {
@@ -138,28 +143,33 @@ body {
       margin-bottom: 0; }
     ._mobile .item img {
       width: 250px;
-      margin: 0 auto;
+      margin: 0 auto 30px auto;
       display: block;
-      padding: 0 0 30px 0; }
-  @media (min-width: 768px) {
+      padding: 8px;
+      background: url("../images/mobile-bg-2.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+  @media (min-width: 992px) {
     ._mobile .showcase {
       display: flex;
       max-width: 1400px;
       margin: 0 auto;
       justify-content: space-around;
       padding: 0 30px; } }
-  @media (min-width: 992px) {
-    ._mobile .item img {
-      width: 320px; } }
 
 ._desktop {
   background: #2d2d2d;
-  color: #ffffff; }
+  color: #ffffff;
+  background-image: url("../images/desktop-bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   ._desktop .showcase .item {
     padding: 0 20px 20px 20px; }
   ._desktop .showcase img {
     width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     ._desktop .showcase {
       display: flex;
       padding: 0;
@@ -210,7 +220,7 @@ body {
     font-size: 2.0rem; }
     .footer .social-links li {
       display: inline; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .footer .content {
       display: flex;
       max-width: 1400px;

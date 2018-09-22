@@ -29,6 +29,9 @@ p, ol, ul {
     @media (min-width: $breakpoint2){
         font-size: 1.2rem;
         line-height: 130%;
+    }
+
+    @media (min-width: $breakpoint4){
 
         span {
             display: block;
