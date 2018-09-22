@@ -21,8 +21,23 @@
             // apps border fun
             modernkode.interval = setInterval(function () {
                 var apps = document.querySelectorAll('.apps');
-                apps[Math.floor(Math.random()*3)].setAttribute('data-bg', Math.floor(Math.random()*2)+1);
+                apps[ Math.floor(Math.random()*3) ].setAttribute('data-bg', Math.floor(Math.random()*2)+1);
             }, 2000);
+
+            // app image swapper
+            var buttons = document.querySelectorAll('.app');
+            buttons.forEach(function (button) {
+                button.onclick = function (e) {
+                    e.preventDefault();
+                    if(!button.classList.contains('active')){
+
+
+                        button.classList.add('active');
+                        document.querySelector('#' + e.target.getAttribute('data-target')).src = e.target.href;
+                    }
+                }
+            });
+
 
         }
     };

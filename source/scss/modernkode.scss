@@ -121,6 +121,28 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        ul {
+            li {
+                display: inline;
+                padding: 5px;
+            }
+
+            a {
+                font-weight: bold;
+                font-size: 1.2rem;
+                display: inline-block;
+                text-decoration: none;
+                padding: 10px 15px;
+
+                &.active {
+                    color: $brand-black;
+                    cursor: default;
+                }
+            }
+        }
+
+
     }
 
     @media (min-width: $breakpoint2){
@@ -134,14 +156,6 @@ body {
         }
     }
 
-    @media (min-width: $breakpoint1){
-
-        .item {
-            img {
-                //width: 320px;
-            }
-        }
-    }
 }
 
 ._desktop {

@@ -168,6 +168,18 @@ body {
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover; }
+    ._mobile .item ul li {
+      display: inline;
+      padding: 5px; }
+    ._mobile .item ul a {
+      font-weight: bold;
+      font-size: 1.2rem;
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 15px; }
+      ._mobile .item ul a.active {
+        color: #000000;
+        cursor: default; }
   @media (min-width: 992px) {
     ._mobile .showcase {
       display: flex;
