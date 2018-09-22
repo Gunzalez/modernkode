@@ -72,6 +72,18 @@ h4 {
     h4 {
       font-size: 1.4rem; } }
 
+button {
+  color: #FC6621;
+  background: rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+  font-family: "linottesemibold";
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px; }
+  button:hover {
+    background: rgba(0, 0, 0, 0.15); }
+
 body {
   background: #ffffff;
   color: #2d2d2d; }
@@ -141,12 +153,17 @@ body {
     ._mobile .item p {
       padding-bottom: 15px;
       margin-bottom: 0; }
+    ._mobile .item img[data-bg="1"] {
+      background-image: url("../images/mobile-bg-1.png"); }
+    ._mobile .item img[data-bg="2"] {
+      background-image: url("../images/mobile-bg-2.png"); }
+    ._mobile .item img[data-bg="3"] {
+      background-image: url("../images/mobile-bg-3.png"); }
     ._mobile .item img {
       width: 250px;
       margin: 0 auto 30px auto;
       display: block;
       padding: 8px;
-      background: url("../images/mobile-bg-2.png");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover; }
