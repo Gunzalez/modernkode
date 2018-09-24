@@ -259,7 +259,17 @@ body {
       display: none; }
 
 ._technology .showcase {
-  height: 400px; }
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center; }
+
+._technology .item {
+  max-width: 25%;
+  padding: 0 30px;
+  display: inline; }
+
+._technology img {
+  filter: grayscale(1); }
 
 ._testimonials .showcase {
   max-width: 1400px;
