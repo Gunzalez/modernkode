@@ -94,19 +94,55 @@ h4 {
     }
 }
 
-button {
+button, .button {
     color: $brand-orange;
     background: rgba(0,0,0,0.05);
     text-transform: uppercase;
     font-family: $headerFont;
     font-size: 1.2rem;
     border: none;
-    padding: 15px 20px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
 
     &:hover {
         background: rgba(0,0,0,0.15);
+    }
+}
+
+form {
+
+    .fields {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .row {
+        padding-bottom: 15px;
+
+        &:nth-last-child(1){
+            padding-bottom: 0;
+        }
+    }
+
+    label {
+        display: block;
+        padding-bottom: 5px;
+        font-family: $headerFont;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 4px 7px;
+        font-family: $bodyFont;
+        width: 340px;
+        font-size: 0.9rem;
+        border: none;
+        color: $brand-dark;
+        resize: none;
+    }
+
+    textarea {
+        height: 120px;
     }
 }
 

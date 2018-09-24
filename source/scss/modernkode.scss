@@ -262,7 +262,8 @@ body {
 
 ._contact {
 
-    //background: whitesmoke;
+    padding: 30px 0;
+
     background-image: url("../images/bg-maps.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -271,6 +272,12 @@ body {
     border-top: 1px solid lighten($brand-grey, 15%);
 
     min-height: 260px;
+
+    form {
+        max-width: $breakpoint0;
+        margin: 0 auto;
+        text-align: right;
+    }
 }
 
 .footer {

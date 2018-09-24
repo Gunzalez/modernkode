@@ -72,18 +72,44 @@ h4 {
     h4 {
       font-size: 1.4rem; } }
 
-button {
+button, .button {
   color: #FC6621;
   background: rgba(0, 0, 0, 0.05);
   text-transform: uppercase;
   font-family: "linottesemibold";
   font-size: 1.2rem;
   border: none;
-  padding: 15px 20px;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px; }
-  button:hover {
+  button:hover, .button:hover {
     background: rgba(0, 0, 0, 0.15); }
+
+form .fields {
+  text-align: left;
+  display: inline-block; }
+
+form .row {
+  padding-bottom: 15px; }
+  form .row:nth-last-child(1) {
+    padding-bottom: 0; }
+
+form label {
+  display: block;
+  padding-bottom: 5px;
+  font-family: "linottesemibold"; }
+
+form input[type="text"], form input[type="email"], form textarea {
+  padding: 4px 7px;
+  font-family: "Mukta Malar", sans-serif;
+  width: 340px;
+  font-size: 0.9rem;
+  border: none;
+  color: #2d2d2d;
+  resize: none; }
+
+form textarea {
+  height: 120px; }
 
 [data-device="desktop-only"] {
   display: none; }
@@ -250,12 +276,17 @@ body {
     padding-bottom: 15px; }
 
 ._contact {
+  padding: 30px 0;
   background-image: url("../images/bg-maps.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 1px solid #dbdbdb;
   min-height: 260px; }
+  ._contact form {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: right; }
 
 .footer {
   background: #2d2d2d;
