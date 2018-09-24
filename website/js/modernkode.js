@@ -24,6 +24,22 @@
                 apps[ Math.floor(Math.random()*3) ].setAttribute('data-bg', Math.floor(Math.random()*2)+1 );
             }, 2000);
 
+            // preload images
+            var loadedImages = 0;
+            document.querySelectorAll('.app').forEach(function (link) {
+                // appImages.push(link.href);
+                var img = new Image();
+                img.src = link.href;
+                img.onload = function(){
+                    loadedImages++;
+                    if (loadedImages >= document.querySelectorAll('.app').length) {
+                        document.querySelectorAll('.switches').forEach(function (singleSwitch) {
+                            singleSwitch.classList.remove('loading');
+                        });
+                    }
+                };
+            });
+
             // app image swapper
             var buttons = document.querySelectorAll('.app');
             buttons.forEach(function (button) {
