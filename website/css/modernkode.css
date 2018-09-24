@@ -100,7 +100,7 @@ form label {
   font-family: "linottesemibold"; }
 
 form input[type="text"], form input[type="email"], form textarea {
-  padding: 4px 7px;
+  padding: 4px 10px;
   font-family: "Mukta Malar", sans-serif;
   width: 340px;
   font-size: 0.9rem;
