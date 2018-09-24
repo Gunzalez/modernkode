@@ -85,6 +85,12 @@ button {
   button:hover {
     background: rgba(0, 0, 0, 0.15); }
 
+[data-device="desktop-only"] {
+  display: none; }
+  @media (min-width: 992px) {
+    [data-device="desktop-only"] {
+      display: block; } }
+
 body {
   background: #ffffff;
   color: #2d2d2d; }
@@ -144,8 +150,7 @@ body {
   background-color: #e7e7e7;
   background-image: url("../images/bg-white.png");
   background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: repeat-y; }
   ._mobile .item {
     text-align: center; }
     ._mobile .item h4 {
@@ -166,7 +171,7 @@ body {
       display: block;
       padding: 8px;
       background-position: center center;
-      background-repeat: no-repeat;
+      background-repeat: repeat-y;
       background-size: cover; }
     ._mobile .item .switches {
       text-align: center; }
@@ -183,36 +188,41 @@ body {
       ._mobile .item .switches.loading {
         display: none; }
   @media (min-width: 992px) {
-    ._mobile .showcase {
-      display: flex;
-      max-width: 1400px;
-      margin: 0 auto;
-      justify-content: space-around;
-      padding: 0 30px; } }
+    ._mobile {
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
+      ._mobile .showcase {
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: space-around;
+        padding: 0 30px; } }
 
 ._desktop {
   background: #2d2d2d;
   color: #ffffff;
   background-image: url("../images/bg-black.png");
   background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: repeat-y; }
   ._desktop .showcase .item {
     padding: 0 20px 20px 20px; }
   ._desktop .showcase img {
     width: 100%; }
   @media (min-width: 992px) {
-    ._desktop .showcase {
-      display: flex;
-      padding: 0;
-      margin: 60px 0; }
-      ._desktop .showcase .item {
-        padding: 0; }
-        ._desktop .showcase .item img {
-          width: 100%;
-          display: block; }
-      ._desktop .showcase.off img {
-        filter: grayscale(1); } }
+    ._desktop {
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
+      ._desktop .showcase {
+        display: flex;
+        padding: 0;
+        margin: 60px 0; }
+        ._desktop .showcase .item {
+          padding: 0; }
+          ._desktop .showcase .item img {
+            width: 100%;
+            display: block; }
+        ._desktop .showcase.off img {
+          filter: grayscale(1); } }
   ._desktop .controls {
     text-align: center; }
     ._desktop .controls span:nth-child(1) {

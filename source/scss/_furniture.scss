@@ -109,3 +109,10 @@ button {
         background: rgba(0,0,0,0.15);
     }
 }
+
+[data-device="desktop-only"] {
+    display: none;
+    @media (min-width: $breakpoint2){
+        display: block;
+    }
+}
