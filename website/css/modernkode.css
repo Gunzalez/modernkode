@@ -308,15 +308,14 @@ body {
 
 ._technology .showcase {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 30px;
   text-align: center;
-  padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; }
 
 ._technology .item {
-  padding: 0 20px 20px 20px;
+  padding-bottom: 30px;
   display: inline-block;
   width: 120px; }
 
@@ -329,6 +328,11 @@ body {
   display: inline-block;
   text-align: center;
   width: 100%; }
+
+@media (min-width: 992px) {
+  ._technology .showcase {
+    margin: 0 auto;
+    justify-content: space-between; } }
 
 ._testimonials .showcase {
   max-width: 1400px;
