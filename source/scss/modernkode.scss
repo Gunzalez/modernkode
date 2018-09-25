@@ -106,6 +106,7 @@ body {
 }
 
 .off-screen {
+
     .ribbon {
         position: fixed;
         top: 0;
@@ -126,7 +127,6 @@ body {
 }
 
 ._mobile {
-
     background-color: #e7e7e7;
     background-image: url("../images/bg-white.png");
     background-position: top center;
@@ -208,7 +208,6 @@ body {
 }
 
 ._desktop {
-
     background: $brand-dark;
     color: #ffffff;
     background-image: url("../images/bg-black.png");
@@ -288,7 +287,6 @@ body {
     }
 
     .item {
-        //padding: 0 20px 20px 20px;
         padding-bottom: 30px;
         display: inline-block;
         width: 120px;
@@ -346,7 +344,6 @@ body {
     background-size: cover;
 
     border-top: 1px solid lighten($brand-grey, 15%);
-
     min-height: 260px;
 
     form {
@@ -380,7 +377,6 @@ body {
 
         font-size: 2.0rem;
     }
-
 
     @media (min-width: $breakpoint2){
 
@@ -420,7 +416,5 @@ body {
                 }
             }
         }
-
     }
-
 }
