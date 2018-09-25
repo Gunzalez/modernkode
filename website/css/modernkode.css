@@ -52,7 +52,7 @@ h1 {
       font-size: 3.6rem; } }
 
 h2 {
-  font-size: 2.0rem; }
+  font-size: 1.7rem; }
   @media (min-width: 992px) {
     h2 {
       font-size: 2.8rem; } }
@@ -130,7 +130,7 @@ form textarea {
   display: none; }
   @media (min-width: 992px) {
     [data-device="desktop-only"] {
-      display: block; } }
+      display: inline-block; } }
 
 body {
   background: #ffffff;
@@ -148,7 +148,7 @@ body {
   justify-content: center;
   color: #ffffff; }
   .hero .text p {
-    font-size: 1.8rem; }
+    font-size: 1.7rem; }
   .hero .logo {
     width: 180px;
     margin-bottom: 15px; }
@@ -162,16 +162,31 @@ body {
   padding: 20px;
   z-index: 10;
   width: 100%; }
+  .ribbon h1 {
+    display: inline-block;
+    font-size: 32px;
+    margin: 0;
+    padding: 4px 0 0 0;
+    color: #2d2d2d;
+    font-weight: 100;
+    font-family: "Mukta Malar";
+    text-transform: uppercase;
+    line-height: 30px; }
+    @media (min-width: 992px) {
+      .ribbon h1 {
+        font-size: 44px;
+        padding: 0; } }
   .ribbon .menu {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end; }
-  .ribbon .item {
-    padding-left: 60px; }
-    .ribbon .item:nth-child(1) {
-      margin-right: auto;
-      padding-left: 0; }
+    justify-content: space-between; }
+  .ribbon .item i {
+    font-size: 30px; }
+  .ribbon .item span {
+    display: none; }
+  .ribbon .item a {
+    margin-left: 15px; }
   .ribbon .logo {
     width: 60px; }
   .ribbon h3, .ribbon a, .ribbon p {

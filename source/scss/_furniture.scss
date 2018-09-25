@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
-
 body {
     font-family: $bodyFont;
     font-size: 16px;
@@ -74,7 +73,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.0rem;
+    font-size: 1.7rem;
 
     @media (min-width: $breakpoint2){
         font-size: 2.8rem;
@@ -170,13 +169,12 @@ form {
             display: block;
         }
     }
-
 }
 
 [data-device="desktop-only"] {
     display: none;
     @media (min-width: $breakpoint2){
-        display: block;
+        display: inline-block;
     }
 }
 

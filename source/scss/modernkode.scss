@@ -20,7 +20,7 @@ body {
 
     .text {
         p {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
         }
     }
 
@@ -41,19 +41,42 @@ body {
     z-index: 10;
     width: 100%;
 
+    h1 {
+        display: inline-block;
+        font-size: 32px;
+        margin: 0;
+        padding: 4px 0 0 0;
+        color: $brand-dark;
+        font-weight: 100;
+        font-family: $bodyFont;
+        text-transform: uppercase;
+        line-height: 30px;
+
+        @media (min-width: $breakpoint2){
+            font-size: 44px;
+            padding: 0;
+        }
+    }
+
     .menu {
         max-width: $breakpoint0;
         margin: 0 auto;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
     .item {
-        padding-left: 60px;
 
-        &:nth-child(1){
-            margin-right: auto;
-            padding-left: 0;
+        i {
+            font-size: 30px;
+        }
+
+        span {
+            display: none;
+        }
+
+        a {
+            margin-left: 15px;
         }
     }
 
@@ -74,10 +97,6 @@ body {
         padding-bottom: 5px;
         color: $brand-grey;
         text-transform: uppercase;
-    }
-
-    @media (min-width: $breakpoint2){
-
     }
 }
 
