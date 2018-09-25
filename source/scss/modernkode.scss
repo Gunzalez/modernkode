@@ -34,19 +34,44 @@ body {
 
 .ribbon {
     background: #ffffff;
-    height: 60px;
+    height: 75px;
+    padding: 20px;
     z-index: 10;
     width: 100%;
 
     .menu {
         max-width: $breakpoint0;
         margin: 0 auto;
-        padding: 6px 20px;
         display: flex;
+        justify-content: flex-end;
+    }
+
+    .item {
+        padding-left: 60px;
+
+        &:nth-child(1){
+            margin-right: auto;
+            padding-left: 0;
+        }
     }
 
     .logo {
         width: 60px;
+    }
+
+    h3, a, p {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        line-height: 100%;
+        font-size: 1.1em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+        padding-bottom: 5px;
+        color: $brand-grey;
+        text-transform: uppercase;
     }
 
     @media (min-width: $breakpoint2){
@@ -68,7 +93,7 @@ body {
 }
 
 .off-screen + .section {
-    margin-top: 60px;
+    margin-top: 75px;
 }
 
 .section {
@@ -113,7 +138,7 @@ body {
 
         img {
             width: 250px;
-            margin: 0 auto 30px auto;
+            margin: 0 auto 10px auto;
             display: block;
             padding: 8px;
             background-position: center center;
@@ -123,6 +148,7 @@ body {
 
         .switches {
             text-align: center;
+            margin-bottom: 20px;
 
             a {
                 font-weight: bold;
@@ -142,8 +168,6 @@ body {
                 display: none;
             }
         }
-
-
     }
 
     @media (min-width: $breakpoint2){
@@ -163,6 +187,7 @@ body {
 }
 
 ._desktop {
+
     background: $brand-dark;
     color: #ffffff;
     background-image: url("../images/bg-black.png");
@@ -237,12 +262,16 @@ body {
         margin: 0 auto;
         text-align: center;
         padding: 20px 0;
+        display: flex;
+        //justify-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .item {
-        max-width: 120px;
-        padding: 0 30px;
+        padding: 0 20px 20px 20px;
         display: inline-block;
+        width: 120px;
     }
 
     img {
