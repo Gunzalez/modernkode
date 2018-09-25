@@ -8,10 +8,10 @@ body {
 
 .hero {
     background-size: cover;
-    height: 560px;
+    height: 480px;
     background-position: center center;
     background-color: $brand-black;
-    background-image: url("../images/banner-2.jpg");
+    background-image: url("../images/banner.jpg");
     text-align: center;
     display: flex;
     align-items: center;
@@ -19,7 +19,9 @@ body {
     color: #ffffff;
 
     .text {
-        padding-bottom: 130px;
+        p {
+            font-size: 1.8rem;
+        }
     }
 
     .logo {
