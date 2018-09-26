@@ -5,7 +5,6 @@ Stuff to do
 * Set up email address
 * Set up PHP mailer
 * Upload website
-* Favicon
 * Reset ribbon on page resize
 * Look at all copy
 * Tweak some more...
@@ -17,3 +16,4 @@ DONE
 =============================
 * Form section
 * Footer list stile, needs dots
+* Favicon
