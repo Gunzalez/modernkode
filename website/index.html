@@ -24,7 +24,7 @@
             <div class="text">
                 <img src="images/mk-logo-white.svg" class="logo" alt="Modern Kode logo" />
                 <p>
-                    <span>Hi, we are Modern Kode, we provide mobile and web solutions.</span>
+                    <span>Hi, we are MODERN KODE, we provide mobile and web solutions.</span>
                     <span>We are big on small screens.</span>
                    </p>
             </div>
@@ -185,6 +185,14 @@
 
         <form id="contact-form">
 
+            <div class="text">
+                <h2>Get in touch</h2>
+                <p>
+                    Call us on <a href="tel:07852263922" class="number-string">0785226&nbsp;3922</a><br>
+                        Send emails to <a href="mailto:info@mordernkode.com">info@modernkode.com</a>
+                </p>
+            </div>
+
             <div class="fields">
                 <div class="row">
                     <label for="name" class="visually-hidden">Name</label>
@@ -198,8 +206,9 @@
                     <label for="message" class="visually-hidden">Message</label>
                     <textarea id="message" placeholder="Your message"></textarea>
                 </div>
-                <div class="row">
-                    <input type="button" class="button" value="Send" />
+                <div class="row _submit">
+                    <!--<input type="button" class="button" value="Send" />-->
+                    <button id="send">Send</button>
                 </div>
             </div>
         </form>
@@ -210,19 +219,19 @@
         <div class="content">
             <div class="item">
                 <h4>Watch this space!</h4>
-                <ul>
+                <ul class="bullets">
                     <li>NOW: Saving Pots v2 - A redesign, and from Ionic to React Native</li>
                     <li>NEXT: A tailoring app for traditional designer outfits</li>
                     <li>COMING SOON: Mobile gaming app, based on the busy on a popular motorway</li>
                 </ul>
             </div>
-            <div class="item">
-                <h4>Contact Us</h4>
-                <ul>
-                    <li><a href="#">0785&nbsp;226&nbsp;3922</a></li>
-                    <li><a href="mailto:info@modernkode.com">info@modernkode.com</a></li>
-                </ul>
-            </div>
+            <!--<div class="item">-->
+                <!--<h4>Contact Us</h4>-->
+                <!--<ul>-->
+                    <!--<li><a href="tel:07852263922" class="number-string">0785&nbsp;226&nbsp;3922</a></li>-->
+                    <!--<li><a href="mailto:info@modernkode.com">info@modernkode.com</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
             <div class="item">
                 <h4>Social Media</h4>
                 <ul class="social-links">
@@ -234,7 +243,7 @@
         </div>
         <div class="company">
             <p>Copyright &copy; 2018 Modern Kode Ltd. All rights reserved.</p>
-            <p>Company No. 10594333</p>
+            <p>Company No. <span class="number-string">10594333</span></p>
         </div>
     </div>
     <script src="js/domready.js"></script>

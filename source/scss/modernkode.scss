@@ -342,22 +342,44 @@ body {
 }
 
 ._contact {
-
-    padding: 30px 20px;
-    background-image: url("../images/bg-contact-3.jpg");
+    background: $brand-dark;
+    color: #ffffff;
+    background-image: url("../images/bg-contact-2.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    //border-top: 1px solid lighten($brand-grey, 15%);
-    min-height: 260px;
-
     form {
-        max-width: $breakpoint0;
+        width: 100%;
         margin: 0 auto;
+        padding: 0 20px;
+
+        a {
+            text-decoration: none;
+
+            &.number-string {
+                font-size: 1.4rem;
+            }
+        }
+
+        .row {
+            padding-bottom: 15px;
+
+            &:nth-last-child(1){
+                padding-bottom: 0;
+            }
+
+            &._submit {
+
+                text-align: center;
+            }
+        }
+
+        @media (min-width: $breakpoint2){
+            width: 600px;
+        }
     }
 }
-
 
 .footer {
     background: $brand-dark;
