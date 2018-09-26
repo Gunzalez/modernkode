@@ -233,6 +233,9 @@ body {
     .section {
       padding: 75px 0 60px 0; } }
 
+em {
+  text-decoration: underline; }
+
 ._mobile {
   background-color: #e7e7e7;
   background-image: url("../images/bg-white.png");
