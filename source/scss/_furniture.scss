@@ -27,7 +27,6 @@ p, ol, ul {
     line-height: 120%;
     font-size: 1.2rem;
 
-
     @media (min-width: $breakpoint2){
         font-size: 1.3rem;
         line-height: 130%;
@@ -51,8 +50,9 @@ a {
 }
 
 .footer {
+
     h4 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     p, ul, ol {
@@ -70,6 +70,7 @@ h1 {
     font-size: 2.8rem;
 
      @media (min-width: $breakpoint2){
+
          font-size: 3.6rem;
      }
 }
@@ -187,6 +188,3 @@ form {
         padding-bottom: 5px;
     }
 }
-
-
-

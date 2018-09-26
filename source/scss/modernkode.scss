@@ -303,7 +303,7 @@ body {
         filter: grayscale(1);
         display: inline-block;
         margin-bottom: 15px;
-        opacity: 0.6;
+        opacity: 0.4;
     }
 
     p {
@@ -399,12 +399,12 @@ body {
     }
 
     .social-links {
+        font-size: 40px;
 
         li {
             display: inline;
+            padding-left: 3px;
         }
-
-        font-size: 2.0rem;
     }
 
     @media (min-width: $breakpoint2){

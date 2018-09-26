@@ -37,7 +37,7 @@ a {
     text-decoration: underline; }
 
 .footer h4 {
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
 .footer p, .footer ul, .footer ol {
   font-size: 1.0rem;
@@ -337,7 +337,7 @@ body {
   filter: grayscale(1);
   display: inline-block;
   margin-bottom: 15px;
-  opacity: 0.6; }
+  opacity: 0.4; }
 
 ._technology p {
   display: inline-block;
@@ -400,9 +400,10 @@ body {
     border-bottom: 1px solid #3a3a3a;
     margin-bottom: 15px; }
   .footer .social-links {
-    font-size: 2.0rem; }
+    font-size: 40px; }
     .footer .social-links li {
-      display: inline; }
+      display: inline;
+      padding-left: 3px; }
   @media (min-width: 992px) {
     .footer .content {
       display: flex;
