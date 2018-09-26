@@ -116,7 +116,7 @@ form {
 
     .fields {
         text-align: left;
-        display: inline-block;
+        //display: block;
     }
 
     .row {
@@ -137,7 +137,7 @@ form {
     input[type="text"], input[type="email"], textarea {
         padding: 10px 12px;
         font-family: $bodyFont;
-        width: 340px;
+        width: 100%;
         font-size: 1.0rem;
         border: none;
         color: $brand-dark;
@@ -148,34 +148,51 @@ form {
     textarea {
         height: 120px;
     }
-}
 
-@media (min-width: $breakpoint2){
-    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: white;
-    }
-    ::-moz-placeholder { /* Firefox 19+ */
-        color: white;
-    }
-    :-ms-input-placeholder { /* IE 10+ */
-        color: white;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-        color: white;
-    }
 
-    form {
-        label {
-            display: block;
+
+    @media (min-width: $breakpoint2){
+
+        .fields {
+            display: inline-block;
         }
     }
 }
+
+//@media (min-width: $breakpoint2){
+//    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+//        color: white;
+//    }
+//    ::-moz-placeholder { /* Firefox 19+ */
+//        color: white;
+//    }
+//    :-ms-input-placeholder { /* IE 10+ */
+//        color: white;
+//    }
+//    :-moz-placeholder { /* Firefox 18- */
+//        color: white;
+//    }
+//
+//    form {
+//        label {
+//            display: block;
+//        }
+//    }
+//}
 
 [data-device="desktop-only"] {
     display: none;
     @media (min-width: $breakpoint2){
         display: inline-block;
     }
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
 }
 
 
