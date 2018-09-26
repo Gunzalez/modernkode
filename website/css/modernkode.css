@@ -31,19 +31,21 @@ p, ol, ul {
       display: block; } }
 
 a {
-  color: #FC6621; }
+  color: #FC6621;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 .footer h4 {
   font-size: 1.2rem; }
 
 .footer p, .footer ul, .footer ol {
-  font-size: 0.9rem;
-  text-align: left; }
+  font-size: 1.0rem;
+  text-align: left;
+  padding-bottom: 5px; }
 
-.footer a {
-  text-decoration: none; }
-  .footer a:hover {
-    text-decoration: underline; }
+.footer p {
+  line-height: 150%; }
 
 h1 {
   font-size: 2.8rem; }
@@ -135,6 +137,12 @@ form textarea {
 .number-string {
   display: inline-block;
   font-size: 1.2rem; }
+
+.bullets {
+  list-style: disc;
+  padding-left: 20px; }
+  .bullets li {
+    padding-bottom: 5px; }
 
 body {
   background: #ffffff;
@@ -382,7 +390,7 @@ body {
 .footer {
   background: #2d2d2d;
   color: #ffffff;
-  padding: 60px 20px 30px 20px; }
+  padding: 60px 20px 10px 20px; }
   .footer h4 {
     color: #FDAF2A;
     white-space: nowrap; }
