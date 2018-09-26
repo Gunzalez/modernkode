@@ -183,7 +183,7 @@ body {
     font-weight: 100;
     font-family: "Mukta Malar";
     text-transform: uppercase;
-    line-height: 30px; }
+    line-height: 40px; }
     @media (min-width: 992px) {
       .ribbon h1 {
         font-size: 44px;
@@ -336,7 +336,8 @@ body {
 ._technology img {
   filter: grayscale(1);
   display: inline-block;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  opacity: 0.6; }
 
 ._technology p {
   display: inline-block;
