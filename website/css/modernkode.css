@@ -286,24 +286,20 @@ em {
   color: #ffffff;
   background-image: url("../images/bg-black.png");
   background-position: top center;
-  background-repeat: repeat-y; }
-  ._desktop .showcase .item {
-    padding: 0 20px 20px 20px; }
+  background-repeat: repeat-y;
+  padding-bottom: 0; }
   ._desktop .showcase img {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   @media (min-width: 992px) {
     ._desktop {
       background-repeat: no-repeat;
-      background-attachment: fixed; }
+      background-attachment: fixed;
+      padding-bottom: 60px; }
       ._desktop .showcase {
         display: flex;
         padding: 0;
-        margin: 60px 0; }
-        ._desktop .showcase .item {
-          padding: 0; }
-          ._desktop .showcase .item img {
-            width: 100%;
-            display: block; }
+        margin: 15px 0 45px 0; }
         ._desktop .showcase.off img {
           filter: grayscale(1); } }
   ._desktop .controls {
@@ -326,7 +322,7 @@ em {
     text-align: center; }
     @media (min-width: 992px) {
       ._technology .showcase {
-        margin: 0 auto; } }
+        margin: 20px auto; } }
   ._technology .item {
     padding-bottom: 30px;
     display: inline-block;

@@ -224,38 +224,25 @@ em {
     background-image: url("../images/bg-black.png");
     background-position: top center;
     background-repeat: repeat-y;
+    padding-bottom: 0;
 
     .showcase {
 
-        .item {
-            padding: 0 20px 20px 20px;
-
-        }
-
         img {
             width: 100%;
+            display: block;
         }
     }
 
     @media (min-width: $breakpoint2){
-
         background-repeat: no-repeat;
         background-attachment: fixed;
+        padding-bottom: 60px;
 
         .showcase {
             display: flex;
             padding: 0;
-            margin: 60px 0;
-
-            .item {
-                padding: 0;
-
-                img {
-                    width: 100%;
-                    display: block;
-                }
-
-            }
+            margin: 15px 0 45px 0;
 
             &.off {
 
@@ -298,7 +285,7 @@ em {
         text-align: center;
 
         @media (min-width: $breakpoint2){
-            margin: 0 auto;
+            margin: 20px auto;
         }
     }
 
