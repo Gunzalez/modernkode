@@ -147,9 +147,9 @@ em {
 
 ._mobile {
     background-color: #e7e7e7;
-    background-image: url("../images/bg-white.png");
-    background-position: top center;
-    background-repeat: repeat-y;
+    background-image: url("../images/bg-hmm.jpg");
+    //background-position: top center;
+    //background-repeat: repeat-y;
 
     .item {
         text-align: center;
@@ -212,8 +212,8 @@ em {
 
     @media (min-width: $breakpoint2){
 
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        //background-repeat: no-repeat;
+        //background-attachment: fixed;
 
         .showcase {
             display: flex;
