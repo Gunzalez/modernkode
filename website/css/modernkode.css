@@ -405,8 +405,10 @@ em {
     padding-bottom: 15px;
     border-bottom: 1px solid #3a3a3a;
     margin-bottom: 15px; }
+  .footer .contact-links,
   .footer .social-links {
     font-size: 40px; }
+    .footer .contact-links li,
     .footer .social-links li {
       display: inline;
       padding-left: 3px; }

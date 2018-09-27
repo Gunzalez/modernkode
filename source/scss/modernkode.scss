@@ -127,10 +127,10 @@ body {
             //font-family: $headerFont;
         }
     }
-}
 
-.off-screen + .section {
-    margin-top: 60px;
+    + .section {
+        margin-top: 60px;
+    }
 }
 
 .section {
@@ -411,6 +411,7 @@ em {
         margin-bottom: 15px;
     }
 
+    .contact-links,
     .social-links {
         font-size: 40px;
 
