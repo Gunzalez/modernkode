@@ -170,62 +170,64 @@ body {
 
 .ribbon {
   background: #ffffff;
-  height: 75px;
-  padding: 20px;
+  height: 60px;
   z-index: 10;
-  width: 100%; }
+  width: 100%;
+  padding: 0 20px; }
   .ribbon h1 {
     display: inline-block;
-    font-size: 32px;
+    font-size: 29px;
+    line-height: 60px;
     margin: 0;
-    padding: 4px 0 0 0;
-    color: #2d2d2d;
+    padding: 0;
+    color: #b5b5b5;
     font-weight: 100;
     font-family: "Mukta Malar";
-    text-transform: uppercase;
-    line-height: 38px; }
-    @media (min-width: 992px) {
-      .ribbon h1 {
-        font-size: 44px;
-        padding: 0; } }
+    text-transform: uppercase; }
   .ribbon .menu {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
   .ribbon .item i {
-    font-size: 30px; }
+    font-size: 20px; }
+  .ribbon .item img {
+    display: none;
+    margin-right: 20px;
+    width: 40px; }
   .ribbon .item span {
     display: none; }
-  .ribbon .item a:nth-last-child(1) {
-    margin-left: 15px; }
-  .ribbon .item:nth-child(1) {
-    margin-right: 10px; }
-  .ribbon .logo {
-    width: 60px; }
-  .ribbon h3, .ribbon a, .ribbon p {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    line-height: 100%;
-    font-size: 1.1em; }
-  .ribbon h3 {
-    font-size: 0.9em;
-    padding-bottom: 5px;
-    color: #b5b5b5;
-    text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .ribbon .item i {
+      border-right: 1px solid #b5b5b5;
+      padding-right: 10px; }
+    .ribbon .item img, .ribbon .item span {
+      display: inline-block; } }
+  .ribbon ul li {
+    display: inline-block;
+    padding-left: 10px;
+    height: 60px; }
+    .ribbon ul li a {
+      line-height: 60px;
+      padding: 0 10px;
+      text-decoration: none;
+      display: inline-block; }
+      .ribbon ul li a.number-string {
+        font-size: 1.4rem; }
 
 .text {
-  padding: 0 30px 30px 30px;
+  padding: 0 20px 30px 20px;
   text-align: center; }
 
 .off-screen .ribbon {
   position: fixed;
   top: 0;
   box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1); }
+  .off-screen .ribbon h1 {
+    color: #2d2d2d; }
 
 .off-screen + .section {
-  margin-top: 75px; }
+  margin-top: 60px; }
 
 .section {
   padding: 30px 0; }
@@ -340,7 +342,8 @@ em {
   filter: grayscale(1);
   display: inline-block;
   margin-bottom: 15px;
-  opacity: 0.4; }
+  opacity: 0.4;
+  height: 80px; }
 
 ._technology p {
   display: inline-block;

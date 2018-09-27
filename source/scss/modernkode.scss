@@ -36,26 +36,21 @@ body {
 
 .ribbon {
     background: #ffffff;
-    height: 75px;
-    padding: 20px;
+    height: 60px;
     z-index: 10;
     width: 100%;
+    padding: 0 20px;
 
     h1 {
         display: inline-block;
-        font-size: 32px;
+        font-size: 29px;
+        line-height: 60px;
         margin: 0;
-        padding: 4px 0 0 0;
-        color: $brand-dark;
+        padding: 0;
+        color: $brand-grey;
         font-weight: 100;
         font-family: $bodyFont;
         text-transform: uppercase;
-        line-height: 38px;
-
-        @media (min-width: $breakpoint2){
-            font-size: 44px;
-            padding: 0;
-        }
     }
 
     .menu {
@@ -68,47 +63,55 @@ body {
     .item {
 
         i {
-            font-size: 30px;
+            font-size: 20px;
+        }
+
+        img {
+            display: none;
+            margin-right: 20px;
+            width: 40px;
         }
 
         span {
             display: none;
         }
 
-        a {
+        @media (min-width: $breakpoint3){
+            i {
+                border-right: 1px solid $brand-grey;
+                padding-right: 10px;
+            }
 
-            &:nth-last-child(1){
-                margin-left: 15px;
+            img, span {
+                display: inline-block;
+            }
+
+        }
+    }
+
+    ul {
+
+        li {
+            display: inline-block;
+            padding-left: 10px;
+            height: 60px;
+
+            a {
+                line-height: 60px;
+                padding: 0 10px;
+                text-decoration: none;
+                display: inline-block;
+
+                &.number-string {
+                    font-size: 1.4rem;
+                }
             }
         }
-
-        &:nth-child(1){
-            margin-right: 10px;
-        }
-    }
-
-    .logo {
-        width: 60px;
-    }
-
-    h3, a, p {
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        line-height: 100%;
-        font-size: 1.1em;
-    }
-
-    h3 {
-        font-size: 0.9em;
-        padding-bottom: 5px;
-        color: $brand-grey;
-        text-transform: uppercase;
     }
 }
 
 .text {
-    padding: 0 30px 30px 30px;
+    padding: 0 20px 30px 20px;
     text-align: center;
 }
 
@@ -118,11 +121,16 @@ body {
         position: fixed;
         top: 0;
         box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+
+        h1 {
+            color: $brand-dark;
+            //font-family: $headerFont;
+        }
     }
 }
 
 .off-screen + .section {
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .section {
@@ -308,6 +316,7 @@ em {
         display: inline-block;
         margin-bottom: 15px;
         opacity: 0.4;
+        height: 80px;
     }
 
     p {
