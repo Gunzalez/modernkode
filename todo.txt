@@ -2,13 +2,8 @@
 Stuff to do
 =============================
 * Animated coloured button
-* Set up email address
 * Set up PHP mailer
-* Upload website
 * Reset ribbon on page resize
-* Look at all copy
-* Tweak some more...
-
 
 
 
@@ -17,3 +12,13 @@ DONE
 * Form section
 * Footer list stile, needs dots
 * Favicon
+* Upload website
+* Set up email address
+
+
+
+
+Endless
+================
+* Look at all copy...
+* Tweak some more...

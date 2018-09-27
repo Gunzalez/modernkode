@@ -1,12 +1,12 @@
 {
-  "name": "berrygood",
+  "name": "Modern Kode",
   "version": "1.0.0",
-  "description": "berrygood website templates",
+  "description": "Modern Kode website templates",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "segun konibire",
+  "author": "Segun Konibire",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.24.7",
