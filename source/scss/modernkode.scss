@@ -124,7 +124,6 @@ body {
 
         h1 {
             color: $brand-dark;
-            //font-family: $headerFont;
         }
     }
 
@@ -146,10 +145,7 @@ em {
 }
 
 ._mobile {
-    background-color: #e7e7e7;
-    background-image: url("../images/bg-hmm.jpg");
-    //background-position: top center;
-    //background-repeat: repeat-y;
+    background: url("../images/bg-hmm.jpg");
 
     .item {
         text-align: center;
@@ -199,7 +195,7 @@ em {
                 margin: 0 5px;
 
                 &.active {
-                    color: $brand-black;
+                    color: $brand-dark;
                     cursor: default;
                 }
             }
@@ -212,9 +208,6 @@ em {
 
     @media (min-width: $breakpoint2){
 
-        //background-repeat: no-repeat;
-        //background-attachment: fixed;
-
         .showcase {
             display: flex;
             max-width: $breakpoint0;
@@ -223,7 +216,6 @@ em {
             padding: 0 30px;
         }
     }
-
 }
 
 ._desktop {
@@ -295,14 +287,19 @@ em {
 }
 
 ._technology {
+    background: url("../images/bg-hmm.jpg");
 
     .showcase {
         max-width: $breakpoint0;
-        margin: 0 30px;
-        text-align: center;
+        margin: 0 20px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        text-align: center;
+
+        @media (min-width: $breakpoint2){
+            margin: 0 auto;
+        }
     }
 
     .item {
@@ -323,14 +320,6 @@ em {
         display: inline-block;
         text-align: center;
         width: 100%;
-    }
-
-    @media (min-width: $breakpoint2){
-
-        .showcase {
-            margin: 0 auto;
-            justify-content: space-between;
-        }
     }
 }
 
@@ -363,18 +352,18 @@ em {
     background-repeat: no-repeat;
     background-size: cover;
 
+    a {
+        text-decoration: none;
+
+        &.number-string {
+            font-size: 1.5rem;
+        }
+    }
+
     form {
         width: 100%;
         margin: 0 auto;
         padding: 0 20px;
-
-        a {
-            text-decoration: none;
-
-            &.number-string {
-                font-size: 1.5rem;
-            }
-        }
 
         .row {
             padding-bottom: 15px;
@@ -384,7 +373,6 @@ em {
             }
 
             &._submit {
-
                 text-align: center;
             }
         }
@@ -421,6 +409,10 @@ em {
         }
     }
 
+    .number-string {
+        font-size: 1.2rem;
+    }
+
     @media (min-width: $breakpoint2){
 
         .content {
@@ -438,10 +430,6 @@ em {
                     width: inherit;
                     flex-grow: 4;
                 }
-
-                p {
-                    max-width: 200px;
-                }
             }
         }
 
@@ -450,6 +438,7 @@ em {
             max-width: $breakpoint0;
             margin: 0 auto;
             justify-content: space-between;
+            white-space: nowrap;
 
             p {
                 text-align: left;
@@ -457,6 +446,10 @@ em {
                 &:nth-last-child(1){
                     text-align: right;
                 }
+            }
+
+            span {
+                display: inline;
             }
         }
     }
