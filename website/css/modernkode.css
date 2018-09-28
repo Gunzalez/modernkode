@@ -140,6 +140,10 @@ form textarea {
   .bullets li {
     padding-bottom: 5px; }
 
+.fa-phone,
+.fa-phone-square {
+  transform: scaleX(-1); }
+
 body {
   background: #ffffff;
   color: #2d2d2d; }
@@ -195,8 +199,14 @@ body {
     display: none; }
   @media (min-width: 768px) {
     .ribbon .item i {
-      border-right: 1px solid #b5b5b5;
-      padding-right: 10px; }
+      border-right: 1px solid #cfcfcf;
+      padding-right: 10px;
+      color: #2d2d2d; }
+      .ribbon .item i.fa-phone {
+        border-right: 0;
+        padding-right: 0;
+        padding-left: 10px;
+        border-left: 1px solid #cfcfcf; }
     .ribbon .item img, .ribbon .item span {
       display: inline-block; } }
   .ribbon ul li {

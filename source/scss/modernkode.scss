@@ -77,9 +77,18 @@ body {
         }
 
         @media (min-width: $breakpoint3){
+
             i {
-                border-right: 1px solid $brand-grey;
+                border-right: 1px solid lighten($brand-grey, 10%);
                 padding-right: 10px;
+                color: $brand-dark;
+
+                &.fa-phone {
+                    border-right: 0;
+                    padding-right: 0;
+                    padding-left: 10px;
+                    border-left: 1px solid lighten($brand-grey, 10%);
+                }
             }
 
             img, span {

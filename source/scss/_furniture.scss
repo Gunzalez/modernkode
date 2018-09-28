@@ -183,3 +183,8 @@ form {
         padding-bottom: 5px;
     }
 }
+
+.fa-phone,
+.fa-phone-square {
+    transform: scaleX(-1);
+}
