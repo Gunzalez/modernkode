@@ -19,14 +19,21 @@ body {
     color: #ffffff;
 
     .text {
-        p {
-            font-size: 1.7rem;
+
+        @media (min-width: $breakpoint2){
+            p {
+                font-size: 1.7rem;
+            }
         }
     }
 
     .logo {
-        width: 180px;
+        width: 120px;
         margin-bottom: 15px;
+
+        @media (min-width: $breakpoint2){
+            width: 180px;
+        }
     }
 
     @media (min-width: $breakpoint2){

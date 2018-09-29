@@ -159,11 +159,15 @@ body {
   align-items: center;
   justify-content: center;
   color: #ffffff; }
-  .hero .text p {
-    font-size: 1.7rem; }
+  @media (min-width: 992px) {
+    .hero .text p {
+      font-size: 1.7rem; } }
   .hero .logo {
-    width: 180px;
+    width: 120px;
     margin-bottom: 15px; }
+    @media (min-width: 992px) {
+      .hero .logo {
+        width: 180px; } }
   @media (min-width: 992px) {
     .hero {
       height: 780px; } }
