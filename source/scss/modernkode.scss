@@ -390,6 +390,10 @@ em {
     button {
         color: $brand-dark;
         background: $brand-orange;
+
+        &:focus {
+            background: $brand-yellow;
+        }
     }
 }
 

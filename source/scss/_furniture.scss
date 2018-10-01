@@ -102,15 +102,14 @@ h4 {
 button, .button {
     color: $brand-orange;
     background: rgba(0,0,0,0.05);
-    //text-transform: uppercase;
     font-family: $headerFont;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     line-height: 100%;
     border: none;
-    padding: 12px 18px 10px 18px;
+    padding: 15px 20px 13px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
 
     &:hover {
         background: rgba(0,0,0,0.15);
