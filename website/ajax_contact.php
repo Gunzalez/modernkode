@@ -44,10 +44,10 @@
         $errors['email'] = 'Email is not valid';
     }
     else if (empty($_POST['name'])) {
-        $errors['name'] = 'Name is a requied field';
+        $errors['name'] = 'Name is a required field';
     }
     else if (empty($_POST['message'])) {
-        $errors['message'] = 'Message is a requied field';
+        $errors['message'] = 'Message is a required field';
     }
     
     // send mail //
