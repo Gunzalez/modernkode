@@ -196,7 +196,7 @@
             </p>
         </div>
 
-        <form id="contact-form">
+        <form id="contact-form" action="ajax_contact.php" method="POST">
 
             <div class="fields">
                 <div class="row">
@@ -216,6 +216,16 @@
                     <button id="send">Send email</button>
                 </div>
             </div>
+
+            <div class="thanks" id="thanks">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Thanks you getting in touch, we will get back to <span id="reply-message"></span> as soon as possible.</p>
+                        <p>Now look at this cool looking retro phone</p>
+                    </div>
+                </div>
+            </div>
+
         </form>
 
     </div>

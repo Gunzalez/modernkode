@@ -59,9 +59,32 @@
         }
     };
 
+    modernkode.contact = {
+
+        els: {
+            form: document.querySelector('#contact-form'),
+            error: false,
+            data: ''
+        },
+
+        init: function () {
+            modernkode.contact.els.form.onsubmit = function(evt){
+                evt.preventDefault();
+                if(this['name'].value.length === 0 || this['email'].value.length || this['message'].value.length){
+
+                } else {
+
+                }
+                console.log(this['name'].value)
+
+            };
+        }
+    };
+
     // main init
     modernkode.init = function () { // all init here
         modernkode.environment.init();
+        modernkode.contact.init();
     };
 
     // main scroll
