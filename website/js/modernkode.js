@@ -70,12 +70,14 @@
         init: function () {
             modernkode.contact.els.form.onsubmit = function(evt){
                 evt.preventDefault();
-                if(this['name'].value.length === 0 || this['email'].value.length || this['message'].value.length){
+                if(this['name'].value.length === 0 || this['email'].value.length === 0 || this['message'].value.length === 0 ){
 
                 } else {
+                    modernkode.contact.els.form.querySelectorAll('.fields')[0].classList.add('display-none');
+                    modernkode.contact.els.form.querySelectorAll('.thanks')[0].classList.remove('display-none');
+
 
                 }
-                console.log(this['name'].value)
 
             };
         }
