@@ -78,23 +78,33 @@
     modernkode.contact = {
 
         els: {
-            form: document.querySelector('#contact-form'),
+            form: document.querySelector('#contact-form')
+        },
+        
+        vals: {
             error: false,
-            data: ''
+            data: {}
         },
 
         init: function () {
             modernkode.contact.els.form.onsubmit = function(evt){
 
                 evt.preventDefault();
-                modernkode.contact.els.error = false;
-                modernkode.contact.els.error = this['name'].value.length === 0 || this['email'].value.length === 0 || this['message'].value.length === 0;
-                modernkode.contact.els.error = !modernkode.utils.isValidEmail(this['email'].value);
-                if(!modernkode.contact.els.error){
+                modernkode.contact.vals.error = false;
+                modernkode.contact.vals.error = this['name'].value.length === 0 || this['email'].value.length === 0 || this['message'].value.length === 0;
+                modernkode.contact.vals.error = !modernkode.utils.isValidEmail(this['email'].value);
+                if(!modernkode.contact.vals.error){
                     modernkode.contact.els.form.querySelectorAll('.fields')[0].classList.add('display-none');
                     modernkode.contact.els.form.querySelectorAll('.thanks')[0].classList.remove('display-none');
 
-                    // do ajax form submission
+                    modernkode.contact.vals.data = Object.assign({}, {
+                        name: this['name'].value,
+                        email: this['email'].value,
+                        message: this['message'].value,
+                        kode: this['kode'].value
+                    });
+                    
+                    console.log(modernkode.contact.vals.data);
                 }
             };
         }
