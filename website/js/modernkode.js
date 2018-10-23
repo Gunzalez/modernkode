@@ -4,6 +4,20 @@
     var modernkode = {};
     window.modernkode = modernkode;
 
+    modernkode.utils = {
+
+        isValidEmail: function (email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        },
+
+        stopRKey:function () {
+            var evt = (evt) ? evt : ((event) ? event : null);
+            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+            if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+        }
+    };
+
     modernkode.environment = {
         init: function (){
 
@@ -56,6 +70,8 @@
                     }
                 };
             });
+
+            document.onkeypress = modernkode.utils.stopRKey;
         }
     };
 
@@ -69,16 +85,17 @@
 
         init: function () {
             modernkode.contact.els.form.onsubmit = function(evt){
-                evt.preventDefault();
-                if(this['name'].value.length === 0 || this['email'].value.length === 0 || this['message'].value.length === 0 ){
 
-                } else {
+                evt.preventDefault();
+                modernkode.contact.els.error = false;
+                modernkode.contact.els.error = this['name'].value.length === 0 || this['email'].value.length === 0 || this['message'].value.length === 0;
+                modernkode.contact.els.error = !modernkode.utils.isValidEmail(this['email'].value);
+                if(!modernkode.contact.els.error){
                     modernkode.contact.els.form.querySelectorAll('.fields')[0].classList.add('display-none');
                     modernkode.contact.els.form.querySelectorAll('.thanks')[0].classList.remove('display-none');
 
-
+                    // do ajax form submission
                 }
-
             };
         }
     };
