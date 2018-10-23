@@ -14,7 +14,23 @@
         stopRKey:function () {
             var evt = (evt) ? evt : ((event) ? event : null);
             var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
-            if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+            if ((evt.keyCode === 13) && (node.type ==="text"))  {return false;}
+        },
+
+        postAjax: function postAjax(url, data, success) {
+            var params = typeof data === 'string' ? data : Object.keys(data).map(
+                function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
+            ).join('&');
+
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            xhr.open('POST', url);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState>3 && xhr.status===200) { success(xhr.responseText); }
+            };
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send(params);
+            return xhr;
         }
     };
 
@@ -71,6 +87,7 @@
                 };
             });
 
+            // stops ENTER/RETURN key from submitting form
             document.onkeypress = modernkode.utils.stopRKey;
         }
     };
@@ -91,8 +108,14 @@
 
                 evt.preventDefault();
                 modernkode.contact.vals.error = false;
+
+                // all field required
                 modernkode.contact.vals.error = this['name'].value.length === 0 || this['email'].value.length === 0 || this['message'].value.length === 0;
+
+                // valid email required
                 modernkode.contact.vals.error = !modernkode.utils.isValidEmail(this['email'].value);
+
+                // if no errors submit form via ajax
                 if(!modernkode.contact.vals.error){
                     modernkode.contact.els.form.querySelectorAll('.fields')[0].classList.add('display-none');
                     modernkode.contact.els.form.querySelectorAll('.thanks')[0].classList.remove('display-none');
@@ -103,8 +126,20 @@
                         message: this['message'].value,
                         kode: this['kode'].value
                     });
-                    
+
+                    console.log(this.action);
                     console.log(modernkode.contact.vals.data);
+
+
+                    // example request
+                    //modernkode.utils.postAjax('http://foo.bar/', 'p1=1&p2=Hello+World', function(data){ console.log(data); });
+
+                    // example request with data object
+                    // modernkode.utils.postAjax('http://foo.bar/', { p1: 1, p2: 'Hello World' }, function(data){ console.log(data); });
+
+                    modernkode.utils.postAjax(this.action, modernkode.contact.vals.data, function(data){
+                        console.log(data);
+                    });
                 }
             };
         }

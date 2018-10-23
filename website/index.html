@@ -198,6 +198,10 @@
 
         <form id="contact-form" action="ajax_contact.php" method="POST">
 
+            <?php
+                session_start();
+                $kode = md5(mt_rand());
+            ?>
             <input type="hidden" name="kode" value="<?php echo $kode?>" />
 
             <div class="fields">
