@@ -9,8 +9,8 @@
      * <input type="hidden" name="kode" value="<?php echo $kode?>" />
      */
     
-    $to      = 'gunzalez@gmail.com';
-    $subject = 'Modernkode: Website enquiry';
+    $to      = 'gunzalez@hotmail.com';
+    $subject = 'Modern kode: website enquiry';
     $headers = [
         'From' => 'gunzalez@hotmail.com',
         'Reply-To' => 'gunzalez@hotmail.com',

@@ -202,7 +202,7 @@
                 session_start();
                 $kode = md5(mt_rand());
             ?>
-            <input type="hidden" name="kode" value="<?php echo $kode?>” />
+            <input type="hidden" name="kode" value="<?php echo $kode?>" />
 
             <div class="fields">
                 <div class="row">
@@ -222,6 +222,16 @@
                     <button id="send">Send email</button>
                 </div>
             </div>
+
+            <div class="thanks display-none">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Thanks, we will get back to you as soon as possible.</p>
+                        <p>Now you can see the retro phone clearer.</p>
+                    </div>
+                </div>
+            </div>
+
         </form>
 
     </div>

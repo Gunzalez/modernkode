@@ -126,9 +126,9 @@
                         message: this['message'].value,
                         kode: this['kode'].value
                     });
-
-                    console.log(this.action);
-                    console.log(modernkode.contact.vals.data);
+                    //
+                    // console.log(this.action);
+                    // console.log(modernkode.contact.vals.data);
 
 
                     // example request
