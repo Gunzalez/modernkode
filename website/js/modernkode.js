@@ -137,7 +137,9 @@
                     // example request with data object
                     // modernkode.utils.postAjax('http://foo.bar/', { p1: 1, p2: 'Hello World' }, function(data){ console.log(data); });
 
-                    modernkode.utils.postAjax(this.action, modernkode.contact.vals.data, function(data){
+
+
+                    modernkode.utils.postAjax(this.action, JSON.stringify(modernkode.contact.vals.data), function(data){
                         console.log(data);
                     });
                 }
