@@ -4,9 +4,5 @@ Single page website, nothing more.
 
 HTML, CSS and some JS
 
-At $ prompt -
-=======================
-Git Clone
-npm install
-gulp
+Requires npm, git clone and then rung 'gulp'
 
